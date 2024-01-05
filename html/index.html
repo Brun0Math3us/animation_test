@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Animação</title>
+        <style>
+            .quadrado{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(115, 255, 115);
+                animation-name: mover;
+                animation-delay: 2s;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes mover{
+                0% {transform: translateX(0);}
+                50%{transform: translateX(200px);}
+                100%{transform: translateX(400px);}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animação Básica</h1>
+        <div class="quadrado"></div>
+    </body>
+</html>
